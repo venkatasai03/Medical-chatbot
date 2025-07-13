@@ -1,0 +1,94 @@
+/* Register Container */
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #333333; /* Dark text */
+}
+
+/* Register Title */
+.register-container h2 {
+  color: #1976d2; /* Blue color for the title */
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+/* Input Fields */
+.register-container form input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  background-color: #f5f5f5; /* Light grey input background */
+  color: #333333; /* Dark text */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.register-container form input::placeholder {
+  color: #888; /* Light grey placeholder text */
+}
+
+.register-container form input:focus {
+  outline: none;
+  border-color: #1976d2; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5); /* Soft blue focus effect */
+}
+
+/* Submit Button */
+.register-container form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1976d2; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.register-container form button:hover {
+  background-color: #1565c0; /* Darker blue for hover effect */
+}
+
+/* Footer Section */
+.register-container .footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888; /* Grey text for footer */
+}
+
+.register-container .footer a {
+  color: #1976d2; /* Blue link color */
+  text-decoration: none;
+}
+
+.register-container .footer a:hover {
+  text-decoration: underline; /* Underline effect on hover for links */
+}
+
+/* Add responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .register-container {
+    margin: 40px auto;
+    padding: 30px;
+  }
+
+  .register-container h2 {
+    font-size: 24px;
+  }
+
+  .register-container form input,
+  .register-container form button {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,91 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff; /* White background for the entire page */
+  color: #333333; /* Dark text for better readability */
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #f1f1f1; /* Light text for buttons */
+  background-color: #1976d2; /* Blue background */
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #1565c0; /* Darker blue for hover */
+}
+
+/* Links as buttons (used in Register/Login for navigation) */
+button[type="button"] {
+  background: none;
+  border: none;
+  color: #1976d2; /* Blue link on white background */
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+button[type="button"]:hover {
+  color: #1565c0; /* Darker blue for hover effect */
+}
+
+/* Form inputs */
+input {
+  font-family: inherit;
+  background-color: #f5f5f5; /* Light background for inputs */
+  color: #333333; /* Dark text for inputs */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #bbb; /* Light grey placeholder text */
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5); /* Soft blue focus effect */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Light background for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1976d2; /* Blue color for scrollbar thumb */
+  border-radius: 6px;
+}
+
+/* Centered error message or info */
+.center-text {
+  text-align: center;
+  color: #888; /* Lighter grey for error/info text */
+  margin-top: 20px;
+}
+
+/* Smooth transitions on page elements */
+html {
+  scroll-behavior: smooth;
+}
